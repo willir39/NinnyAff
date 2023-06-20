@@ -1,9 +1,9 @@
 local Unlocker, awful, proj = ...
 local player, target = awful.player, awful.target
-if proj.classnameCheck() then return end
+if proj.WarlockCheck() then return end
 
-local classname = proj.classname
-local specname = proj.classname.specname
+local classname = proj.warlock
+local specname = proj.warlock.affliction
 local talents = proj.ID.talent
 
 classname.Level = 0
